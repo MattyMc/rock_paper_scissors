@@ -1,3 +1,15 @@
-Python==2.7.13
+# made easy with: pip freeze > requirements.txt.
+#   removed anaconda
 Flask==0.10.1
-scikit-learn==0.17
+Flask-Cors==2.1.2
+jsonschema==2.5.1
+numpy==1.11.1
+pandas==0.18.1
+pickleshare==0.7.4
+Pillow==3.3.1
+redis==2.10.5
+requests==2.11.1
+rfc3986==0.4.1
+scikit-image==0.12.3
+scikit-learn==0.17.1
+scipy==0.18.1
