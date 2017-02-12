@@ -9,7 +9,8 @@
 
     <!-- Bower components -->
     <link rel="stylesheet" type="text/css" href="static/bower_components/bootstrap/dist/css/bootstrap.css">
-    <!-- <link rel="stylesheet" type="text/css" href="static/stylesheets/bootstrap-theme.css"> -->
+    <!-- Thanks to David T Miller for theme: https://github.com/BlackrockDigital/startbootstrap-freelancer -->
+    <link rel="stylesheet" type="text/css" href="static/stylesheets/theme.min.css">
     <script src="static/bower_components/jquery/dist/jquery.js"></script>
     <script src="static/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="static/bower_components/angular/angular.min.js"></script>
@@ -20,37 +21,137 @@
   </head>
 
   <body ng-app="rockPaperScissorsApp">
-    <div class="container">
 
-      <!-- <div ng-include="'static/play.html'"></div> -->
+    <!-- Navigation -->
+     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom affix">
+         <div class="container">
+             <!-- Brand and toggle get grouped for better mobile display -->
+             <div class="navbar-header page-scroll">
+                 <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                 </button> -->
+                 <!-- <img src="static/images/ibm_logo.png" alt="IBM"> -->
+                 <a class="navbar-brand" href="#page-top">Demo:&nbsp;&nbsp; IBM @ Big Data Summit 2017</a>
+             </div>
+
+             <!-- Collect the nav links, forms, and other content for toggling -->
+             <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <ul class="nav navbar-nav navbar-right">
+                     <li class="hidden">
+                         <a href="#page-top"></a>
+                     </li>
+                     <li class="page-scroll">
+                         <a href="#portfolio">Portfolio</a>
+                     </li>
+                     <li class="page-scroll">
+                         <a href="#about">About</a>
+                     </li>
+                     <li class="page-scroll">
+                         <a href="#contact">Contact</a>
+                     </li>
+                 </ul>
+             </div> -->
+             <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+       </nav>
+
+
+
+       <!-- Header -->
+       <header>
+           <div class="container">
+
+             <!-- Heading -->
+             <div class="row">
+               <div class="col-xs-12">
+                 <h3>Machine Learning Demo</h3>
+               </div>
+             </div>
+
+              <!-- Instructions -->
+              <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1 instructions">
+                  <p>Instructions: To play, choose a pattern (ex. Rock-Scissors, Rock-Scissors) and repeat your playing pattern using the buttons below.</p>
+                </div>
+              </div>
+
+
+              <hr id="hr-top">
+
+
+              <!-- Machine Learning Mode -->
+              <div class="row">
+                <div class="col-xs-12 status">
+                  <span id="status-text" style="">Status: </span><span id="game-status">----</span>
+                </div>
+              </div>
+
+              <hr id="hr-bottom">
+
+              <!-- Machine Learning Mode -->
+              <div class="row" id="machine-learning-mode">
+                <div class="col-xs-12 intro-text">
+                  <span class="skills" style="float:right;">Machine Learning mode: <strong>OFF</strong></span>
+                </div>
+              </div>
+
+
+              <!-- Choices -->
+               <div class="row">
+
+                   <div class="col-xs-12 col-lg-4 choice">
+                       <div class="intro-text">
+                           <!-- <span class="name">Rock Paper Scissors...</span> -->
+                           <!-- <hr class="star-light"> -->
+                           <span class="name btn btn-default">Rock</span>
+                       </div>
+                   </div>
+                   <div class="col-xs-12 col-lg-4 choice">
+                       <div class="intro-text">
+                           <!-- <span class="name">Rock Paper Scissors...</span> -->
+                           <!-- <hr class="star-light"> -->
+                           <span class="name btn btn-default">Paper</span>
+                       </div>
+                   </div>
+                   <div class="col-xs-12 col-lg-4 choice">
+                       <div class="intro-text">
+                           <!-- <span class="name">Rock Paper Scissors...</span> -->
+                           <!-- <hr class="star-light"> -->
+                           <span class="name btn btn-default">Scissors</span>
+                       </div>
+                   </div>
+
+
+
+               </div>
+           </div>
+       </header>
 
 
 
 
-      <div class="row">
-        <div class="col-xs-12 text-center" >
-          <h1>Rock, Paper, Scissors, SHOW!</h1>
-        </div>
-      </div>
-
-      <br>
-
-      <div class="row" id="response-row">
-        <button style="height: 60%; font-size:300%;" class="choice btn btn-default btn-lg col-md-4 col-xs-12" onclick="respond('Yes')">Rock</button>
-        <button style="height: 60%; font-size:300%;" class="choice btn btn-default btn-lg col-md-4 col-xs-12" onclick="respond('No')">Paper</button>
-        <button style="height: 60%; font-size:300%;" class="choice btn btn-default btn-lg col-md-4 col-xs-12" onclick="respond('No')">Scissors</button>
-      </div>
 
 
+           <!-- Footer -->
+    <footer class="text-center">
+       <div class="footer-below">
+           <div class="container">
+               <div class="row text-right">
+                   <div class="col-xs-12">
+                       Created by Matt McInnis, 2017
+                   </div>
+                   <div class="col-xs-12">
+                       Data Scientist @ IBM Canada
+                   </div>
+                   <div class="col-xs-12">
+                       Connect with me on <a href="https://twitter.com/mattlovesmath">Twitter</a>, <a href="https://www.linkedin.com/in/mattmcinnis">LinkedIn</a>.
+                   </div>
+               </div>
+           </div>
+       </div>
+    </footer>
 
 
-
-
-
-
-
-
-
-    </div><!-- container -->
   </body>
 </html>

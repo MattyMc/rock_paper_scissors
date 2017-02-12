@@ -1,8 +1,128 @@
-// Place all the styles related to the Questions controller here.
+.choice {
+  margin-bottom: 2%;
+}
+body {
+  background-color: #233140;
+}
+h3 {
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+header.container {
+  padding-bottom: 40px;
+}
+
+/* override padding-top on header */
+/* small sizes */
+@media (max-width: 768px) {
+  header .container {
+    padding-top: 70px;
+  }
+
+  /* Instructions */
+  .instructions p {
+    font-size: 16px;
+  }
+
+  .status span#status-text {
+    font-size: 34px;
+  }
+  .status span#game-status {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  hr#hr-top {
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  hr#hr-bottom {
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+  #machine-learning-mode {
+    margin-bottom: 8px;
+  }
+}
+
+/* big size */
+@media (min-width: 768px) {
+  header .container {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+
+  /* Instructions */
+  .instructions p {
+    font-size: 20px;
+  }
+
+
+  .status span#status-text {
+    font-size: 40px;
+  }
+  .status span#game-status {
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  hr#hr-top {
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+  hr#hr-bottom {
+    margin-top: 14px;
+    margin-bottom: 20px;
+  }
+  #machine-learning-mode {
+    margin-bottom: 12px;
+  }
+}
+
+
+/* small fix for iphone 5s */
+@media (max-width: 380px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  footer .footer-below {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  header .container {
+    padding-bottom: 10px;
+  }
+}
+
+/* small fix for iphone 5s */
+/*@media (max-width: 330px) {
+  footer .footer-below {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  header .container {
+    padding-bottom: 10px;
+  }
+}*/
+
+
+/*// Place all the styles related to the Questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-#response-row {
+*/
+/*#response-row {
   margin-top: 5%;
 
   button {
@@ -42,4 +162,4 @@
     h1 {
       color: blue;
     }
-}
+}*/
