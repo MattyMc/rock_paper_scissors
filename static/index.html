@@ -60,7 +60,7 @@
 
        <!-- Header -->
        <header>
-           <div class="container">
+           <div class="container" ng-controller="GameController">
 
              <!-- Heading -->
              <div class="row">
@@ -83,7 +83,7 @@
               <!-- Machine Learning Mode -->
               <div class="row">
                 <div class="col-xs-12 status">
-                  <span id="status-text" style="">Status: </span><span id="game-status">----</span>
+                  <span id="status-text" style="">Status: </span><span id="game-status">{{ view.gameStatus }}</span>
                 </div>
               </div>
 
@@ -104,21 +104,21 @@
                        <div class="intro-text">
                            <!-- <span class="name">Rock Paper Scissors...</span> -->
                            <!-- <hr class="star-light"> -->
-                           <span class="name btn btn-default">Rock</span>
+                           <span class="name btn btn-default" ng-click="play(0)" ng-disabled="view.disableButtons">Rock</span>
                        </div>
                    </div>
                    <div class="col-xs-12 col-lg-4 choice">
                        <div class="intro-text">
                            <!-- <span class="name">Rock Paper Scissors...</span> -->
                            <!-- <hr class="star-light"> -->
-                           <span class="name btn btn-default">Paper</span>
+                           <span class="name btn btn-default" ng-click="play(1)" ng-disabled="view.disableButtons">Paper</span>
                        </div>
                    </div>
                    <div class="col-xs-12 col-lg-4 choice">
                        <div class="intro-text">
                            <!-- <span class="name">Rock Paper Scissors...</span> -->
                            <!-- <hr class="star-light"> -->
-                           <span class="name btn btn-default">Scissors</span>
+                           <span class="name btn btn-default"  ng-click="play(2)" ng-disabled="view.disableButtons">Scissors</span>
                        </div>
                    </div>
 
@@ -147,6 +147,10 @@
                    <div class="col-xs-12">
                        Connect with me on <a href="https://twitter.com/mattlovesmath">Twitter</a>, <a href="https://www.linkedin.com/in/mattmcinnis">LinkedIn</a>.
                    </div>
+                   <div class="col-xs-12">
+                       Thanks to David Miller for open source <a href="https://github.com/BlackrockDigital/startbootstrap-freelancer">theme</a>.
+                   </div>
+                 </div>
                </div>
            </div>
        </div>

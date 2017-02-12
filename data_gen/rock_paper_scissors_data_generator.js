@@ -33,6 +33,21 @@ for (var i = 0; i < 3; i++) {
   }
 }
 
+// alternating pattern of length 3 (rock -> scissors -> scissors -> rock ...)
+//  length 3
+for (var i = 0; i < 3; i++) {
+  for (var j = 0; j < 3; j++) {
+    for (var k = 0; k < 3; k++) {
+      for (var l = 0; l < 3; l++ ) {
+        // make sure it's not the same digit repeating
+        if (data.indexOf([i,j,k,i,j,k]) === -1) {
+          data.push([i, j, k, l, i, j]);
+        }
+      }
+    }
+  }
+}
+
 // print out the dataset
 console.log("label,prior_1,prior_2,prior_3,prior_4,prior_5")
 data.map(function(el) {
