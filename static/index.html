@@ -1,24 +1,56 @@
 <!DOCTYPE html>
-<html>
-
+<html style="height: 100%;">
   <head>
-    <title>Python Flask Starter Application</title>
+    <title>Rock, Paper, Scissors Demo</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="static/stylesheets/style.css"> -->
+
+    <!-- Bower components -->
+    <link rel="stylesheet" type="text/css" href="static/bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/stylesheets/bootstrap-theme.css"> -->
+    <script src="static/bower_components/jquery/dist/jquery.js"></script>
+    <script src="static/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="static/bower_components/angular/angular.min.js"></script>
+    <script src="static/bower_components/ng_fittext.js"></script>
     <link rel="stylesheet" href="static/stylesheets/style.css">
+
+    <script src="static/javascripts/app.js"></script>
   </head>
 
-  <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="static/images/newapp-icon.png">
-        <td>
-            <h1>Hi there!</h1>
-          <p>Thanks for creating a
-            <span class = "blue">Python <a href = "http://flask.pocoo.org/">Flask</a> Starter Application</span>.
-    </table>
-  </body>
+  <body ng-app="rockPaperScissorsApp">
+    <div class="container">
 
+      <!-- <div ng-include="'static/play.html'"></div> -->
+
+
+
+
+      <div class="row">
+        <div class="col-xs-12 text-center" >
+          <h1>Rock, Paper, Scissors, SHOW!</h1>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row" id="response-row">
+        <button style="height: 60%; font-size:300%;" class="choice btn btn-default btn-lg col-md-4 col-xs-12" onclick="respond('Yes')">Rock</button>
+        <button style="height: 60%; font-size:300%;" class="choice btn btn-default btn-lg col-md-4 col-xs-12" onclick="respond('No')">Paper</button>
+        <button style="height: 60%; font-size:300%;" class="choice btn btn-default btn-lg col-md-4 col-xs-12" onclick="respond('No')">Scissors</button>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div><!-- container -->
+  </body>
 </html>
